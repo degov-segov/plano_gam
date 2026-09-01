@@ -83,7 +83,7 @@ h1{
 }
 .overview{
   display:grid;
-  grid-template-columns:1.04fr .96fr;
+  grid-template-columns:.82fr 1.18fr;
   gap:24px;
   align-items:stretch;
 }
@@ -99,7 +99,7 @@ h1{
   color:#fff;
   position:relative;
   overflow:hidden;
-  min-height:280px;
+  min-height:270px;
 }
 .hero-panel:after{
   content:"";
@@ -116,13 +116,13 @@ h1{
   z-index:1;
 }
 .hero-panel h2{
-  font-size:31px;
+  font-size:24px;
   line-height:1.12;
   max-width:680px;
   margin-bottom:18px;
 }
 .hero-panel p{
-  font-size:18px;
+  font-size:15px;
   line-height:1.48;
   color:rgba(255,255,255,.82);
   max-width:700px;
@@ -175,23 +175,26 @@ h1{
 .focus-grid{
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:13px;
+  gap:16px;
 }
 .focus{
-  border-radius:18px;
-  background:#f1f6fb;
-  padding:16px;
-  min-height:96px;
+  border-radius:20px;
+  background:#ffffff;
+  border:1px solid #d8e1ec;
+  border-left:6px solid var(--dourado);
+  padding:20px;
+  min-height:126px;
+  box-shadow:0 10px 22px rgba(20,52,86,.08);
 }
 .focus strong{
   display:block;
   color:var(--azul-escuro);
-  font-size:15px;
+  font-size:18px;
   margin-bottom:7px;
 }
 .focus p{
   color:#607083;
-  font-size:13px;
+  font-size:14px;
   line-height:1.35;
 }
 .actions{
@@ -280,31 +283,31 @@ h1{
 
 .next-slide{
   position:absolute;
-  right:30px;
-  bottom:28px;
-  min-width:175px;
-  height:54px;
-  padding:0 20px;
+  right:34px;
+  top:6px;
+  min-width:116px;
+  height:32px;
+  padding:0 10px;
   border-radius:999px;
   display:flex;
   align-items:center;
   justify-content:center;
-  gap:12px;
+  gap:6px;
   text-decoration:none;
   background:var(--azul-escuro);
   color:#ffffff;
-  border:2px solid var(--dourado);
-  font-size:15px;
+  border:1.5px solid var(--dourado);
+  font-size:11px;
   font-weight:800;
   letter-spacing:.01em;
-  box-shadow:0 12px 28px rgba(11,39,72,.24);
+  box-shadow:0 6px 14px rgba(11,39,72,.18);
   z-index:20;
   transition:transform .18s ease, background .18s ease, box-shadow .18s ease;
 }
 .next-slide:hover{
-  transform:translateX(4px);
+  transform:translateX(3px);
   background:var(--azul);
-  box-shadow:0 16px 32px rgba(11,39,72,.30);
+  box-shadow:0 8px 18px rgba(11,39,72,.22);
 }
 .next-slide:focus-visible{
   outline:3px solid rgba(217,164,65,.45);
@@ -312,7 +315,7 @@ h1{
 }
 .next-slide .label{
   color:#ffffff;
-  font-size:15px;
+  font-size:11px;
   font-weight:800;
 }
 
@@ -344,11 +347,10 @@ h1{
   <div class="overview">
     <section class="panel hero-panel">
       <div class="hero-content">
-        <h2>Um plano voltado à governança prática, integração institucional e melhoria dos resultados.</h2>
+        <h2>Plano estruturado em frentes de atuação.</h2>
         <p>
-          As ações combinam fortalecimento da Rede de Governança, acompanhamento de contratos,
-          execução orçamentária, suporte técnico às áreas, iniciativas de integração e atuação estruturada
-          no Prêmio CNJ de Qualidade.
+          A visão geral sintetiza as entregas previstas para o ciclo 2026.2, com foco em governança,
+          conformidade, integração e resultados institucionais.
         </p>
       </div>
       <div class="metric-row">
@@ -400,8 +402,8 @@ h1{
   </div>
 
 
-  <a class="next-slide" href="rede.html" aria-label="Ir para Rede de Governança" title="Próxima página: Rede de Governança">
-    <span class="label">Rede de Governança</span>
+  <a class="next-slide" href="rede.html" aria-label="Ir para Rede de Governança" title="Próxima página: Rede">
+    <span class="label">Rede</span>
     <span aria-hidden="true">→</span>
   </a>
 
