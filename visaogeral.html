@@ -277,6 +277,45 @@ h1{
   color:var(--azul);
   font-weight:700;
 }
+
+.next-slide{
+  position:absolute;
+  right:30px;
+  bottom:28px;
+  min-width:175px;
+  height:54px;
+  padding:0 20px;
+  border-radius:999px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  text-decoration:none;
+  background:var(--azul-escuro);
+  color:#ffffff;
+  border:2px solid var(--dourado);
+  font-size:15px;
+  font-weight:800;
+  letter-spacing:.01em;
+  box-shadow:0 12px 28px rgba(11,39,72,.24);
+  z-index:20;
+  transition:transform .18s ease, background .18s ease, box-shadow .18s ease;
+}
+.next-slide:hover{
+  transform:translateX(4px);
+  background:var(--azul);
+  box-shadow:0 16px 32px rgba(11,39,72,.30);
+}
+.next-slide:focus-visible{
+  outline:3px solid rgba(217,164,65,.45);
+  outline-offset:4px;
+}
+.next-slide .label{
+  color:#ffffff;
+  font-size:15px;
+  font-weight:800;
+}
+
 @media(max-width:980px){
   .page{padding:15px}
   .slide{padding:34px 24px 68px}
@@ -359,6 +398,12 @@ h1{
       <p>Atuação direcionada ao Prêmio CNJ de Qualidade e à construção de mecanismos internos de indução de desempenho.</p>
     </section>
   </div>
+
+
+  <a class="next-slide" href="rede.html" aria-label="Ir para Rede de Governança" title="Próxima página: Rede de Governança">
+    <span class="label">Rede de Governança</span>
+    <span aria-hidden="true">→</span>
+  </a>
 
   <footer class="footer">
     <span>Tribunal de Justiça do Estado do Ceará · Gerência de Governança</span>
