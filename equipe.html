@@ -234,6 +234,45 @@ body{
   color:#7a8798;
 }
 
+
+.next-slide{
+  position:absolute;
+  right:30px;
+  bottom:28px;
+  min-width:190px;
+  height:54px;
+  padding:0 20px;
+  border-radius:999px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  text-decoration:none;
+  background:var(--azul-escuro);
+  color:#ffffff;
+  border:2px solid var(--dourado);
+  font-size:15px;
+  font-weight:800;
+  letter-spacing:.01em;
+  box-shadow:0 12px 28px rgba(11,39,72,.24);
+  z-index:20;
+  transition:transform .18s ease, background .18s ease, box-shadow .18s ease;
+}
+.next-slide:hover{
+  transform:translateX(4px);
+  background:var(--azul);
+  box-shadow:0 16px 32px rgba(11,39,72,.30);
+}
+.next-slide:focus-visible{
+  outline:3px solid rgba(217,164,65,.45);
+  outline-offset:4px;
+}
+.next-slide .label{
+  color:#ffffff;
+  font-size:15px;
+  font-weight:800;
+}
+
 @media(max-width:900px){
   .page{padding:15px}
   .slide{padding:34px 24px 60px}
@@ -383,6 +422,12 @@ body{
       </section>
     </div>
   </div>
+
+
+  <a class="next-slide" href="visaogeral.html" aria-label="Ir para a visão geral do Plano" title="Próxima página: Visão geral do Plano">
+    <span class="label">Visão geral do Plano</span>
+    <span aria-hidden="true">→</span>
+  </a>
 
   <footer class="footer">
     <span>Tribunal de Justiça do Estado do Ceará · Gerência de Governança</span>
