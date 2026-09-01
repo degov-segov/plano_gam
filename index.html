@@ -28,6 +28,7 @@ body{
 }
 .cover{
   width:min(1180px,100%);
+  position:relative;
   min-height:650px;
   display:grid;
   grid-template-columns:38% 62%;
@@ -84,12 +85,14 @@ body{
   max-width:300px;font-weight:750;
 }
 .gerencia{
-  margin-top:8px;
-  font-size:22px;
-  line-height:1.15;
-  font-weight:750;
-  color:#fff;
-  max-width:300px;
+  margin-top:30px;
+  font-size:23px;
+  line-height:1.2;
+  font-weight:800;
+  color:#ffffff;
+  letter-spacing:.01em;
+  position:relative;
+  z-index:1;
 }
 .right{
   padding:64px 62px;
@@ -159,6 +162,36 @@ h1{
   background:var(--dourado);margin-top:7px;flex:none;
 }
 .year{margin-top:28px;color:#6c7887;font-size:14px}
+
+.next-slide{
+  position:absolute;
+  right:30px;
+  bottom:28px;
+  width:58px;
+  height:58px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  background:var(--azul);
+  color:#fff;
+  font-size:31px;
+  font-weight:700;
+  box-shadow:0 10px 24px rgba(11,39,72,.20);
+  transition:transform .18s ease, background .18s ease, box-shadow .18s ease;
+  z-index:5;
+}
+.next-slide:hover{
+  transform:translateX(4px);
+  background:var(--azul-escuro);
+  box-shadow:0 14px 30px rgba(11,39,72,.28);
+}
+.next-slide:focus-visible{
+  outline:3px solid rgba(217,164,65,.65);
+  outline-offset:4px;
+}
+
 @media(max-width:850px){
   .page{padding:18px}
   .cover{grid-template-columns:1fr}
@@ -198,6 +231,11 @@ h1{
       </div>
       <div class="year">TJCE · 2026</div>
     </section>
+
+    <a class="next-slide" href="equipe.html" aria-label="Ir para a página da equipe" title="Próxima página: Equipe">
+      <span class="label">Equipe</span>
+      <span aria-hidden="true">→</span>
+    </a>
   </div>
 </div>
 </body>
