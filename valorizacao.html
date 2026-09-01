@@ -252,6 +252,7 @@ h1{
 
 /* BOTÃO E PAINEL DE ATIVIDADES */
 .activity-toggle{
+  text-decoration:none;
   margin-top:14px;
   display:inline-flex;
   align-items:center;
@@ -504,55 +505,13 @@ h1{
             </div>
           </div>
 
-          <button class="activity-toggle"
-                  type="button"
-                  aria-expanded="false"
-                  aria-controls="atividades-gtr"
-                  onclick="toggleActivities(this)">
-            <span>Ver atividades</span>
-            <span class="arrow" aria-hidden="true">⌄</span>
-          </button>
-
-          <div class="activity-panel" id="atividades-gtr">
-            <h4>Atividades a serem desenvolvidas</h4>
-
-            <div class="activity-list">
-              <div class="activity-item">
-                <span>1</span>
-                <div>Estruturar a base de dados necessária à consolidação do ranking quadrimestral.</div>
-              </div>
-              <div class="activity-item">
-                <span>2</span>
-                <div>Automatizar a coleta e a consolidação das informações utilizadas na apuração das GTRs.</div>
-              </div>
-              <div class="activity-item">
-                <span>3</span>
-                <div>Parametrizar os critérios de classificação previstos na Portaria nº 26/2025.</div>
-              </div>
-              <div class="activity-item">
-                <span>4</span>
-                <div>Realizar testes da solução automatizada e validar os resultados obtidos.</div>
-              </div>
-              <div class="activity-item">
-                <span>5</span>
-                <div>Conferir a consolidação final das informações dos agentes de contratação.</div>
-              </div>
-              <div class="activity-item">
-                <span>6</span>
-                <div>Preparar o ranking referente ao próximo quadrimestre.</div>
-              </div>
-              <div class="activity-item">
-                <span>7</span>
-                <div>Elaborar a minuta da portaria e providenciar a publicação do ranking em novembro/2026.</div>
-              </div>
-            </div>
-
-            <div class="highlight-note">
-              <strong>Foco do semestre:</strong>
-              reduzir controles manuais e tornar a consolidação do ranking mais rápida,
-              padronizada e segura.
-            </div>
-          </div>
+          <a class="activity-toggle"
+             href="evidgtr.html"
+             aria-label="Abrir atividades desenvolvidas da GTR"
+             title="Atividades desenvolvidas da GTR">
+            <span>Atividades desenvolvidas</span>
+            <span aria-hidden="true">→</span>
+          </a>
         </article>
 
         <article class="action-card">
@@ -649,15 +608,6 @@ h1{
 </section>
 </main>
 
-<script>
-function toggleActivities(button){
-  const panel = document.getElementById('atividades-gtr');
-  const isOpen = panel.classList.toggle('open');
-  button.setAttribute('aria-expanded', String(isOpen));
-  button.querySelector('span:first-child').textContent =
-    isOpen ? 'Ocultar atividades' : 'Ver atividades';
-}
-</script>
 
 </body>
 </html>
